@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6828","decrementButtonShouldDecreaseCounterValue","","2026-02-13","passed","2026-02-13","","com.example.kaspresso.DecrementButtonTest","com.example.kaspresso.DecrementButtonTest","decrementButtonShouldDecreaseCounterValue"
+"","17889","counterTextShouldHaveDefaultValue","","2026-02-13","failed","2026-02-13","","com.example.kaspresso.ResetButtonTest","com.example.kaspresso.ResetButtonTest","counterTextShouldHaveDefaultValue"
+"","6706","incrementButtonShouldIncreaseCounterValue","","2026-02-13","passed","2026-02-13","","com.example.kaspresso.IncrementButtonTest","com.example.kaspresso.IncrementButtonTest","incrementButtonShouldIncreaseCounterValue"

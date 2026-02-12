@@ -1,0 +1,126 @@
+{
+    "name": "counterTextShouldHaveDefaultValue",
+    "start": 1770930627141,
+    "stop": 1770930634335,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Decrease counter value to 2",
+            "start": 1770930630681,
+            "stop": 1770930631461,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+                {
+                    "source": "e2945baa-39f1-43f7-be7f-18459461a4fe-attachment.png",
+                    "name": "ResetButtonTest_step_1.png",
+                    "type": "image/png"
+                }
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Reset counter value",
+            "start": 1770930631462,
+            "stop": 1770930631860,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+                {
+                    "source": "60496a0a-311c-43fe-acf7-d74f75d6cd96-attachment.png",
+                    "name": "ResetButtonTest_step_2.png",
+                    "type": "image/png"
+                }
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Counter value should be 0",
+            "start": 1770930631861,
+            "stop": 1770930632007,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+                {
+                    "source": "a08480a1-c7ef-4660-ad7c-cbeaf8c1d08d-attachment.png",
+                    "name": "ResetButtonTest_step_3.png",
+                    "type": "image/png"
+                }
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "source": "38a908d5-40ed-4f4c-b3ac-7e00a4be25cc-attachment.txt",
+            "name": "TestLogcat.txt",
+            "type": "text/plain"
+        },
+        {
+            "source": "2e902911-7027-4055-a2db-cdf6b4e67edd-attachment.mp4",
+            "name": "Video_ResetButtonTest.mp4",
+            "type": "video/mp4"
+        }
+    ],
+    "parameters": [
+    ],
+    "uuid": "296247d6-8ad5-4557-9364-a29bc629bece",
+    "historyId": "cb452e49b154f905ddf925a7e6661028",
+    "fullName": "com.example.kaspresso.ResetButtonTest.counterTextShouldHaveDefaultValue",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.kaspresso"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.kaspresso.ResetButtonTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "counterTextShouldHaveDefaultValue"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.kaspresso.ResetButtonTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: com.kaspersky.kaspresso.runner.KaspressoRunner(45)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

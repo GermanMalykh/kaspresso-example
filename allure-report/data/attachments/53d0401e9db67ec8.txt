@@ -1,0 +1,33 @@
+--------- beginning of main
+02-13 00:08:30.785  9698  9715 I KASPRESSO: ___________________________________________________________________________
+02-13 00:08:30.786  9698  9715 I KASPRESSO: Logcat buffer may be dumped from 02-13 00:08:30.785
+02-13 00:08:30.864  9698  9715 I KASPRESSO: Starting video recording: Video_DecrementButtonTest.mp4
+02-13 00:08:30.864  9698  9715 I KASPRESSO: Waiting for 3000 ms
+02-13 00:08:30.896  9698  9727 D KASPRESSO: Display resolution: 1080x2274; supported codec resolution: 2048x2048
+02-13 00:08:30.896  9698  9727 D KASPRESSO: Starting video recording with resolution 1080x2048
+02-13 00:08:33.867  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:33.867  9698  9715 I KASPRESSO: BEFORE TEST SECTION
+02-13 00:08:33.867  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:33.869  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:33.869  9698  9715 I KASPRESSO: TEST SECTION
+02-13 00:08:33.869  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:33.870  9698  9715 I KASPRESSO: ___________________________________________________________________________
+02-13 00:08:33.870  9698  9715 I KASPRESSO: TEST STEP: "1. Decrease counter value to 2" in DecrementButtonTest
+02-13 00:08:33.919  9698  9698 I KASPRESSO: single click on MaterialButton(id=decrement;text=Decrement;)
+02-13 00:08:34.253  9698  9698 I KASPRESSO: single click on MaterialButton(id=decrement;text=Decrement;)
+02-13 00:08:34.545  9698  9715 I KASPRESSO: TEST STEP: "1. Decrease counter value to 2" in DecrementButtonTest SUCCEED. It took 0 minutes, 0 seconds and 675 millis. 
+02-13 00:08:34.545  9698  9715 I KASPRESSO: ___________________________________________________________________________
+02-13 00:08:34.653  9698  9715 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.DecrementButtonTest/decrementButtonShouldDecreaseCounterValue/DecrementButtonTest_step_1.png
+02-13 00:08:34.654  9698  9715 I KASPRESSO: ___________________________________________________________________________
+02-13 00:08:34.654  9698  9715 I KASPRESSO: TEST STEP: "2. Counter value should be -2" in DecrementButtonTest
+02-13 00:08:34.658  9698  9698 I KASPRESSO: Check an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Count: -2" on MaterialTextView(id=counter;text=Count: -2;)
+02-13 00:08:34.659  9698  9715 I KASPRESSO: TEST STEP: "2. Counter value should be -2" in DecrementButtonTest SUCCEED. It took 0 minutes, 0 seconds and 5 millis. 
+02-13 00:08:34.659  9698  9715 I KASPRESSO: ___________________________________________________________________________
+02-13 00:08:34.792  9698  9715 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.DecrementButtonTest/decrementButtonShouldDecreaseCounterValue/DecrementButtonTest_step_2.png
+02-13 00:08:34.792  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:34.792  9698  9715 I KASPRESSO: AFTER TEST SECTION
+02-13 00:08:34.792  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:34.792  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:34.793  9698  9715 I KASPRESSO: TEST PASSED
+02-13 00:08:34.793  9698  9715 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:08:34.797  9698  9715 I KASPRESSO: Dump logcat buffer to /data/user/0/com.example.kaspresso/files/logcat/com.example.kaspresso.DecrementButtonTest/decrementButtonShouldDecreaseCounterValue/TestLogcat.txt: logcat -b default -d -t "02-13 00:08:30.785" -s "KASPRESSO","KASPRESSO_TEST"

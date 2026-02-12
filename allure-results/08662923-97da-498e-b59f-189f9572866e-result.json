@@ -1,0 +1,105 @@
+{
+    "name": "decrementButtonShouldDecreaseCounterValue",
+    "start": 1770931095609,
+    "stop": 1770931102437,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Decrease counter value to 2",
+            "start": 1770931099200,
+            "stop": 1770931099994,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+                {
+                    "source": "42efeae5-7e08-4b7f-b810-7d230e8f72dd-attachment.png",
+                    "name": "DecrementButtonTest_step_1.png",
+                    "type": "image/png"
+                }
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Counter value should be -2",
+            "start": 1770931099994,
+            "stop": 1770931100133,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+                {
+                    "source": "29eb4cac-c245-480b-87a8-20e162c41492-attachment.png",
+                    "name": "DecrementButtonTest_step_2.png",
+                    "type": "image/png"
+                }
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+        {
+            "source": "80ed9515-1b54-434a-a0cf-79fcb8c4acc4-attachment.txt",
+            "name": "TestLogcat.txt",
+            "type": "text/plain"
+        },
+        {
+            "source": "0c8e8809-d7b6-492a-ab9a-5a5f02449b1a-attachment.mp4",
+            "name": "Video_DecrementButtonTest.mp4",
+            "type": "video/mp4"
+        }
+    ],
+    "parameters": [
+    ],
+    "uuid": "08662923-97da-498e-b59f-189f9572866e",
+    "historyId": "ce370b72701bfa8c736b55c7e25fabd6",
+    "fullName": "com.example.kaspresso.DecrementButtonTest.decrementButtonShouldDecreaseCounterValue",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.kaspresso"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.kaspresso.DecrementButtonTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "decrementButtonShouldDecreaseCounterValue"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.kaspresso.DecrementButtonTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: com.kaspersky.kaspresso.runner.KaspressoRunner(45)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

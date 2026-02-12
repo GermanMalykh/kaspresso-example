@@ -1,0 +1,52 @@
+--------- beginning of main
+02-13 00:29:25.863 13974 13991 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:25.868 13974 13991 I KASPRESSO: Logcat buffer may be dumped from 02-13 00:29:25.863
+02-13 00:29:25.962 13974 13991 I KASPRESSO: Starting video recording: Video_ResetButtonTest.mp4
+02-13 00:29:25.963 13974 13991 I KASPRESSO: Waiting for 3000 ms
+02-13 00:29:25.990 13974 14011 D KASPRESSO: Display resolution: 1080x2274; supported codec resolution: 2048x2048
+02-13 00:29:25.990 13974 14011 D KASPRESSO: Starting video recording with resolution 1080x2048
+02-13 00:29:28.964 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:28.964 13974 13991 I KASPRESSO: BEFORE TEST SECTION
+02-13 00:29:28.964 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:28.964 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:28.964 13974 13991 I KASPRESSO: TEST SECTION
+02-13 00:29:28.964 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:28.964 13974 13991 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:28.964 13974 13991 I KASPRESSO: TEST STEP: "1. Decrease counter value to 2" in ResetButtonTest
+02-13 00:29:28.989 13974 13974 I KASPRESSO: single click on MaterialButton(id=decrement;text=Decrement;)
+02-13 00:29:29.296 13974 13974 I KASPRESSO: single click on MaterialButton(id=decrement;text=Decrement;)
+02-13 00:29:29.593 13974 13991 I KASPRESSO: TEST STEP: "1. Decrease counter value to 2" in ResetButtonTest SUCCEED. It took 0 minutes, 0 seconds and 628 millis. 
+02-13 00:29:29.593 13974 13991 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:29.769 13974 13991 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/ResetButtonTest_step_1.png
+02-13 00:29:29.770 13974 13991 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:29.770 13974 13991 I KASPRESSO: TEST STEP: "2. Reset counter value" in ResetButtonTest
+02-13 00:29:29.779 13974 13974 I KASPRESSO: single click on MaterialButton(id=reset;text=Reset;)
+02-13 00:29:30.103 13974 13991 I KASPRESSO: TEST STEP: "2. Reset counter value" in ResetButtonTest SUCCEED. It took 0 minutes, 0 seconds and 332 millis. 
+02-13 00:29:30.103 13974 13991 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:30.254 13974 13991 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/ResetButtonTest_step_2.png
+02-13 00:29:30.255 13974 13991 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:30.255 13974 13991 I KASPRESSO: TEST STEP: "3. Counter value should be 0" in ResetButtonTest
+02-13 00:29:30.279 13974 13974 I KASPRESSO: Check an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Count: 1" on MaterialTextView(id=counter;text=Count: 0;)
+02-13 00:29:30.282 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of AssertionFailedError
+02-13 00:29:30.288 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of PerformException
+02-13 00:29:32.950 13974 13974 I KASPRESSO: Check an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Count: 1" on MaterialTextView(id=counter;text=Count: 0;)
+02-13 00:29:32.951 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of AssertionFailedError
+02-13 00:29:32.955 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of PerformException
+02-13 00:29:35.631 13974 13974 I KASPRESSO: Check an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Count: 1" on MaterialTextView(id=counter;text=Count: 0;)
+02-13 00:29:35.633 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of AssertionFailedError
+02-13 00:29:35.640 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of PerformException
+02-13 00:29:38.310 13974 13974 I KASPRESSO: Check an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Count: 1" on MaterialTextView(id=counter;text=Count: 0;)
+02-13 00:29:38.311 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of AssertionFailedError
+02-13 00:29:38.314 13974 13991 E KASPRESSO: Failed to interact with view matching: (view.getId() is <2131230851/com.example.kaspresso:id/counter>) because of PerformException
+02-13 00:29:40.881 13974 13991 E KASPRESSO: All attempts to interact for 10000 ms totally failed because of AssertionFailedError
+02-13 00:29:40.881 13974 13991 I KASPRESSO: TEST STEP: "3. Counter value should be 0" in ResetButtonTest FAILED. It took 0 minutes, 10 seconds and 626 millis. 
+02-13 00:29:40.882 13974 13991 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:40.988 13974 13991 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/ResetButtonTest_step_3_failure_AssertionFailedError.png
+02-13 00:29:41.002 13974 13991 I KASPRESSO: View hierarchy dumped to /data/user/0/com.example.kaspresso/files/view_hierarchy/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/ViewHierarchy_MainTestSection_failure_AssertionFailedError.xml
+02-13 00:29:41.002 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:41.002 13974 13991 I KASPRESSO: AFTER TEST SECTION
+02-13 00:29:41.002 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:41.002 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:41.002 13974 13991 I KASPRESSO: TEST FAILED
+02-13 00:29:41.002 13974 13991 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:41.003 13974 13991 I KASPRESSO: Dump logcat buffer to /data/user/0/com.example.kaspresso/files/logcat/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/TestLogcat.txt: logcat -b default -d -t "02-13 00:29:25.863" -s "KASPRESSO","KASPRESSO_TEST"

@@ -1,0 +1,39 @@
+--------- beginning of main
+02-13 00:29:02.205 13249 13268 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:02.211 13249 13268 I KASPRESSO: Logcat buffer may be dumped from 02-13 00:29:02.205
+02-13 00:29:02.319 13249 13268 I KASPRESSO: Starting video recording: Video_ResetButtonTest.mp4
+02-13 00:29:02.319 13249 13268 I KASPRESSO: Waiting for 3000 ms
+02-13 00:29:02.377 13249 13290 D KASPRESSO: Display resolution: 1080x2274; supported codec resolution: 2048x2048
+02-13 00:29:02.377 13249 13290 D KASPRESSO: Starting video recording with resolution 1080x2048
+02-13 00:29:05.325 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:05.325 13249 13268 I KASPRESSO: BEFORE TEST SECTION
+02-13 00:29:05.325 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:05.325 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:05.325 13249 13268 I KASPRESSO: TEST SECTION
+02-13 00:29:05.325 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:05.326 13249 13268 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:05.326 13249 13268 I KASPRESSO: TEST STEP: "1. Decrease counter value to 2" in ResetButtonTest
+02-13 00:29:05.358 13249 13249 I KASPRESSO: single click on MaterialButton(id=decrement;text=Decrement;)
+02-13 00:29:05.653 13249 13249 I KASPRESSO: single click on MaterialButton(id=decrement;text=Decrement;)
+02-13 00:29:05.945 13249 13268 I KASPRESSO: TEST STEP: "1. Decrease counter value to 2" in ResetButtonTest SUCCEED. It took 0 minutes, 0 seconds and 618 millis. 
+02-13 00:29:05.945 13249 13268 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:06.090 13249 13268 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/ResetButtonTest_step_1.png
+02-13 00:29:06.091 13249 13268 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:06.091 13249 13268 I KASPRESSO: TEST STEP: "2. Reset counter value" in ResetButtonTest
+02-13 00:29:06.094 13249 13249 I KASPRESSO: single click on MaterialButton(id=reset;text=Reset;)
+02-13 00:29:06.384 13249 13268 I KASPRESSO: TEST STEP: "2. Reset counter value" in ResetButtonTest SUCCEED. It took 0 minutes, 0 seconds and 293 millis. 
+02-13 00:29:06.384 13249 13268 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:06.531 13249 13268 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/ResetButtonTest_step_2.png
+02-13 00:29:06.532 13249 13268 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:06.532 13249 13268 I KASPRESSO: TEST STEP: "3. Counter value should be 0" in ResetButtonTest
+02-13 00:29:06.538 13249 13249 I KASPRESSO: Check an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Count: 0" on MaterialTextView(id=counter;text=Count: 0;)
+02-13 00:29:06.539 13249 13268 I KASPRESSO: TEST STEP: "3. Counter value should be 0" in ResetButtonTest SUCCEED. It took 0 minutes, 0 seconds and 7 millis. 
+02-13 00:29:06.539 13249 13268 I KASPRESSO: ___________________________________________________________________________
+02-13 00:29:06.675 13249 13268 I KASPRESSO: Screenshot saved to /data/user/0/com.example.kaspresso/files/screenshots/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/ResetButtonTest_step_3.png
+02-13 00:29:06.678 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:06.678 13249 13268 I KASPRESSO: AFTER TEST SECTION
+02-13 00:29:06.678 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:06.678 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:06.678 13249 13268 I KASPRESSO: TEST PASSED
+02-13 00:29:06.678 13249 13268 I KASPRESSO: ---------------------------------------------------------------------------
+02-13 00:29:06.679 13249 13268 I KASPRESSO: Dump logcat buffer to /data/user/0/com.example.kaspresso/files/logcat/com.example.kaspresso.ResetButtonTest/counterTextShouldHaveDefaultValue/TestLogcat.txt: logcat -b default -d -t "02-13 00:29:02.205" -s "KASPRESSO","KASPRESSO_TEST"
