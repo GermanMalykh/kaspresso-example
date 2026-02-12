@@ -20,7 +20,7 @@ class ResetButtonTest : BaseKaspressoTest() {
         }
         step("Counter value should be 0") {
             MainScreen {
-                counterText.hasText("Count: 1")
+                counterText.hasText("Count: 0")
             }
         }
     }
