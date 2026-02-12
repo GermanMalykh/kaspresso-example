@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Allure reports (generated, do not commit)
+allure-report/
+allure-results/
