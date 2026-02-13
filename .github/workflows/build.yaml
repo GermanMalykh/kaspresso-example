@@ -9,9 +9,7 @@ on:
       - "main"
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 jobs:
   test:
@@ -49,31 +47,42 @@ jobs:
     needs: test
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    environment: github-pages
     steps:
-      - uses: actions/download-artifact@v7.0.0
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Checkout gh-pages
+        id: checkout_gh_pages
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: gh-pages
+        continue-on-error: true
+
+      - name: Prepare gh-pages when branch is missing
+        if: steps.checkout_gh_pages.outcome == 'failure'
+        run: mkdir -p gh-pages
+
+      - name: Download Allure results
+        uses: actions/download-artifact@v4
         with:
           name: allure-results
-      - name: Install Allure
-        run: |
-          ALLURE_VERSION=2.29.0
-          wget -q "https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.tgz"
-          tar -xzf "allure-${ALLURE_VERSION}.tgz"
-          echo "$(pwd)/allure-${ALLURE_VERSION}/bin" >> $GITHUB_PATH
-          echo "ALLURE_HOME=$(pwd)/allure-${ALLURE_VERSION}" >> $GITHUB_ENV
-      - name: Generate Allure report
-        run: |
-          allure generate allure-results -o allure-report --clean || true
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4.0.0
-        with:
-          path: allure-report
+          path: allure-results
 
-  deploy:
-    needs: report
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    environment: github-pages
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4.0.5
+      - name: Build Allure report
+        if: always()
+        uses: simple-elf/allure-report-action@v1.13
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          gh_pages: gh-pages
+
+      - name: Publish report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
