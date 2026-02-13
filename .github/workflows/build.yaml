@@ -28,5 +28,5 @@ jobs:
         with:
           cmd: ./gradlew connectedCheck
           api: 31
-          tag: default
-          abi: x86
+          tag: google_apis
+          abi: x86_64
