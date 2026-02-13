@@ -8,6 +8,11 @@ on:
     branches:
       - "main"
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -24,12 +29,53 @@ jobs:
           java-version: '17'
           cache: 'gradle'
       - uses: malinskiy/action-android/install-sdk@release/0.1.6
+      - run: mkdir -p allure-results
       - uses: malinskiy/action-android/emulator-run-cmd@release/0.1.6
         with:
-          cmd: ./gradlew connectedCheck
+          cmd: |
+            ./gradlew connectedCheck
+            adb pull "/sdcard/Documents/allure-results" ./allure-results || true
           api: 31
           tag: google_apis
           abi: x86_64
           disableAnimations: true
           bootTimeout: 900
           cmdOptions: -no-snapshot-save -noaudio -no-boot-anim -no-window -gpu swiftshader_indirect
+      - uses: actions/upload-artifact@v6.0.0
+        if: always()
+        with:
+          name: allure-results
+          path: allure-results
+
+  report:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - uses: actions/download-artifact@v7.0.0
+        with:
+          name: allure-results
+      - name: Install Allure
+        run: |
+          ALLURE_VERSION=2.29.0
+          wget -q "https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.tgz"
+          tar -xzf "allure-${ALLURE_VERSION}.tgz"
+          echo "$(pwd)/allure-${ALLURE_VERSION}/bin" >> $GITHUB_PATH
+          echo "ALLURE_HOME=$(pwd)/allure-${ALLURE_VERSION}" >> $GITHUB_ENV
+      - name: Generate Allure report
+        run: |
+          allure generate allure-results -o allure-report --clean || true
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4.0.0
+        with:
+          path: allure-report
+
+  deploy:
+    needs: report
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4.0.5
