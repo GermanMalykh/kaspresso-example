@@ -30,3 +30,6 @@ jobs:
           api: 31
           tag: google_apis
           abi: x86_64
+          disableAnimations: true
+          bootTimeout: 900
+          cmdOptions: -no-snapshot-save -noaudio -no-boot-anim -no-window -gpu swiftshader_indirect
