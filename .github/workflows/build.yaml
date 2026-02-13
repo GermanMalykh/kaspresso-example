@@ -32,9 +32,7 @@ jobs:
       - run: mkdir -p allure-results
       - uses: malinskiy/action-android/emulator-run-cmd@release/0.1.6
         with:
-          cmd: |
-            ./gradlew connectedCheck
-            adb pull "/sdcard/Documents/allure-results" ./allure-results || true
+          cmd: ./gradlew connectedCheck && adb pull "/sdcard/Documents/allure-results" ./allure-results || true
           api: 31
           tag: google_apis
           abi: x86_64
