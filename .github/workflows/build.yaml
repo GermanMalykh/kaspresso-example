@@ -72,6 +72,9 @@ jobs:
           name: allure-results
           path: allure-results
 
+      - name: List Allure results (debug)
+        run: ls -la allure-results/ && echo "---" && ls allure-results/*.json 2>/dev/null | wc -l
+
       - name: Build Allure report
         if: always()
         uses: simple-elf/allure-report-action@v1.13
