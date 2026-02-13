@@ -79,6 +79,12 @@ jobs:
           allure_history: allure-history
           gh_pages: gh-pages
 
+      - name: Prepare allure-history for publish
+        if: always()
+        run: |
+          chmod -R u+w allure-history 2>/dev/null || true
+          rm -rf allure-history/.git
+
       - name: Publish report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v4
